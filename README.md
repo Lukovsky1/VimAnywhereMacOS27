@@ -236,7 +236,17 @@ System Settings
 → Accessibility
 ```
 
-During development, VimAnywhere currently requires the Xcode **App Sandbox** capability to be disabled so the application can inspect text fields belonging to other applications.
+During development, VimAnywhere currently requires the Xcode **App Sandbox** capability to be disabled so the application can inspect text fields belonging to other applications. 
+
+IMPORTANT: You must run this in your terminal before every build & run:
+
+tccutil reset ListenEvent
+tccutil reset PostEvent
+tccutil reset Accessibility
+
+Then request permissions again via the UI buttons.
+
+Still currently finding a fix for this.
 
 ---
 
