@@ -379,7 +379,7 @@ class KeyboardManager {
             // lowercase r can be implemented later
             return Unmanaged.passUnretained(event)
 
-        default:{
+        default:
 
             // Unknown commands currently pass through.
             return Unmanaged.passUnretained(event)
